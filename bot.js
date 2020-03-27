@@ -27,12 +27,14 @@ client.on('message', msg=>{
         }
     }
     if(msg.channel.id == 692921591042146325){
-        if(msg.content == "t!fish" && msg.author.bot){
+        if(msg.content == "t!fish" || msg.author.bot){
             return;
             }
         }else if(msg.channel.id == 692921591042146325){
+            if(!msg.content == "t!fish" && !msg.author.bot){
             msg.reply("Use t!fish only!");
             msg.delete(2000);
+            }
     }
     if(msgs.includes(swear_word)){
         msg.reply(swear);
