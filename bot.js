@@ -28,7 +28,10 @@ client.on('message', msg=>{
     }
     if(msg.channel.id == 692921591042146325){
         if(msg.content == "t!fish"){
+            if(!msg.author.bot){
             return;
+            }
+        }
         }else{
             msg.reply("Use t!fish only!");
             msg.delete(2000);
