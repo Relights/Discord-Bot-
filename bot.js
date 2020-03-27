@@ -35,7 +35,6 @@ client.on('message', msg=>{
         }else{
             msg.reply("Use t!fish only!");
             msg.delete(2000);
-        }
     }
     if(msgs.includes(swear_word)){
         msg.reply(swear);
