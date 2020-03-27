@@ -31,8 +31,10 @@ client.on('message', msg=>{
             return;
             }
         }else{
+            if(msg.channel.id == 692921591042146325){
             msg.reply("Use t!fish only!");
             msg.delete(2000);
+            }
     }
     if(msgs.includes(swear_word)){
         msg.reply(swear);
