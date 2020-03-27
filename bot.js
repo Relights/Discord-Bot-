@@ -26,7 +26,7 @@ client.on('message', msg=>{
         msg.reply(random);
         }
     }
-    if(!msgs == "t!fish" && msg.channel == "fishing"){
+    if(!msgs == "t!fish" && msg.channel.name == "fishing"){
         msg.reply("Use t!fish only");
         msg.delete(2000);
     }
